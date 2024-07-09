@@ -1,0 +1,14 @@
+@layer components {
+  //Nav Link
+  .nav-link {
+    @apply block p-1 font-sans text-base antialiased font-normal hover:font-medium leading-normal text-black;
+  }
+
+  // Button
+  .btn {
+    @apply select-none rounded-md py-[10px] px-5 text-center align-middle text-sm font-bold transition-all active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none;
+  }
+  .btn-primary {
+    @apply bg-green-700 text-white;
+  }
+}
