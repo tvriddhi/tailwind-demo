@@ -13,15 +13,13 @@ export default {
         },
       },
       screens: {
-        sm: '600px',
-        md: '728px',
-        lg: '984px',
-        // xl: {'min': '1240px', 'max': '1100px'},
-        xl: '1240px',
-        '2xl': '1496px',
+        xl: '1440px',
       },
       container: {
         center: true,
+      },
+      maxWidth:{
+        'screen-xl': '1152px',
       },
       fontFamily: {
         'sans': ['"Inter"'],
