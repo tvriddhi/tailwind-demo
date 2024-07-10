@@ -17,3 +17,6 @@
     @apply text-base;
   }
 }
+.btn-primary {
+  @apply bg-green-600 text-white
+}
