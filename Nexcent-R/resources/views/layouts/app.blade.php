@@ -17,10 +17,8 @@
     <div class="d-flex flex-column flex-lg-row">
       <div class="flex-lg-1 h-lg-screen overflow-y-lg-auto vstack">
         @include('layouts.header')
-        <div class="@if (Route::currentRouteName() != 'login') container-fluid @endif h-full">
-          <div class="@if (Route::currentRouteName() != 'login') @endif h-full">
-            @yield('content')
-          </div>
+        <div class="@if (Route::currentRouteName() != 'login') @endif h-full">
+          @yield('content')
         </div>
       </div>
     </div>

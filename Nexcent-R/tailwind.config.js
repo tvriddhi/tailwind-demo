@@ -11,6 +11,13 @@ export default {
         green: {
           700: '#4CAF4F',
         },
+        slate: {
+          50: '#F5F7FA',
+        },
+        gray: {
+          600: '#717171',
+          800: '#4D4D4D',
+        }
       },
       screens: {
         xl: '1440px',

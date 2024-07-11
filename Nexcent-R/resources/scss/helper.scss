@@ -12,6 +12,6 @@
     @apply bg-green-700 text-white;
   }
   .container {
-    @apply xl:max-w-screen-xl;
+    @apply xl:max-w-screen-xl box-content;
   }
 }
