@@ -20,9 +20,11 @@
         <div class="@if (Route::currentRouteName() != 'login') @endif h-full">
           @yield('content')
         </div>
+        @include('layouts.footer')
       </div>
     </div>
 
+    @yield('script')
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
   </body>

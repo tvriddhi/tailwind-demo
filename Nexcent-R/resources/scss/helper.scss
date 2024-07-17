@@ -1,7 +1,11 @@
 @layer components {
   //Nav Link
   .nav-link {
-    @apply block p-1 font-sans text-base antialiased font-normal hover:font-medium leading-normal text-black;
+    @apply block p-1 font-sans text-base font-normal hover:font-medium hover:text-green-700 leading-normal text-black;
+  }
+
+  .footer-link {
+    @apply text-sm hover:text-green-700 relative before:w-0 before:h-[1.5px] before:-bottom-[3px] before:absolute before:bg-green-700 before:transition-all hover:before:w-full;
   }
 
   // Button
@@ -9,9 +13,9 @@
     @apply select-none rounded-md py-[10px] px-5 text-center align-middle text-sm font-bold transition-all active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none;
   }
   .btn-primary {
-    @apply bg-green-700 text-white;
+    @apply bg-green-700 text-white hover:bg-green-700/90;
   }
   .container {
-    @apply xl:max-w-screen-xl box-content;
+    @apply 2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm mx-auto px-4;
   }
 }
