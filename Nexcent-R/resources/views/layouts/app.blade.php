@@ -17,12 +17,15 @@
     <div class="d-flex flex-column flex-lg-row">
       <div class="flex-lg-1 h-lg-screen overflow-y-lg-auto vstack">
         @include('layouts.header')
-        <div class="@if (Route::currentRouteName() != 'login') container-fluid @endif h-full">
-          <div class="@if (Route::currentRouteName() != 'login') px-xl-10 px-lg-5 py-lg-7 py-4 @endif h-full">
-            @yield('content')
-          </div>
+        <div class="@if (Route::currentRouteName() != 'login') @endif h-full">
+          @yield('content')
         </div>
+        @include('layouts.footer')
       </div>
     </div>
+
+    @yield('script')
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
   </body>
 </html>

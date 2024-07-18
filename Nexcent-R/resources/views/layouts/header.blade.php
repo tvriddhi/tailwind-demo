@@ -1,16 +1,25 @@
-<div class="container">   
-  <nav
-    class="sticky top-0 z-10 block w-full max-w-full px-4 py-2 bg-white rounded-none h-max lg:px-8 lg:py-6">
-    <div class="flex items-center text-blue-gray-900">
-      <a href="#"
-        class="mr-4 block cursor-pointer py-1.5 font-sans text-base font-medium leading-relaxed text-inherit antialiased">
+<nav class="w-full z-20 top-0 start-0 bg-slate-50 relative">
+  <div class="container">
+    <div class="flex flex-wrap items-center justify-between mx-auto py-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="{{ asset('assets/image/logo.svg') }}" alt="logo">
       </a>
-      <div class="flex items-center gap-4 flex-1">
-        <div class="hidden pr-4 lg:block mx-auto">
-          <ul class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <div class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
+        <button id="menu-toggle" data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center px-0 py-2 justify-center text-sm text-green-700 rounded-lg lg:hidden" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg id="menu-open-icon" class="w-5 h-5 block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+          <svg id="menu-close-icon" class="w-5 h-5 hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:order-1 lg:flex-1" id="navbar-sticky">
+        <div class="lg:items-center w-full lg:flex lg:flex-1 lg:flex-row flex-col mx-auto px-4 lg:px-0 pb-4 lg:pb-0 lg:w-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-full nav-content">
+          <ul class="flex flex-col p-0 pb-4 lg:p-0 font-medium lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 mx-auto lg:w-auto w-full">
             <li class="nav-link">
-              <a href="#" class="flex items-center">
+              <a href="#">
                 Home
               </a>
             </li>
@@ -40,30 +49,20 @@
               </a>
             </li>
           </ul>
+          <div class="flex lg:gap-4 gap-4 lg:w-auto w-full">
+            <button
+              class="btn lg:bg-transparent lg:hover:bg-transparent btn-primary lg:text-green-700 text-white lg:ps-1 w-full"
+              type="button">
+              <span>Login</span>
+            </button>
+            <button
+              class="btn btn-primary w-full lg:whitespace-nowrap"
+              type="button">
+              <span>Sign up</span>
+            </button>
+          </div>
         </div>
-        <div class="flex items-center gap-x-1">
-          <button
-            class="hidden btn text-green-700 lg:inline-block"
-            type="button">
-            <span>Login</span>
-          </button>
-          <button
-            class="hidden btn btn-primary lg:inline-block"
-            type="button">
-            <span>Sign up</span>
-          </button>
-        </div>
-        <button
-          class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
-          type="button">
-          <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor"
-              stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </span>
-        </button>
       </div>
     </div>
-  </nav>
-</div>
+  </div>
+</nav>
