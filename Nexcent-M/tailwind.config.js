@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        "2xl": '',
-        xl: '1215px',
-        lg: '992px',
+        sm: '576px',
         md: '768px',
-        sm: '480px',
+        lg: '1200px',
+        xl: '1440px',
+        '2xl': '1600px',
       },
       colors: {
         blue: {
@@ -21,22 +21,33 @@ module.exports = {
           200:'#bbf7d0',
         },
         gray: {
-          600: "#717171",
+          500: '#89939E',
+          600: '#717171',
           950:"#4D4D4D",
         },
         slate: {
-          50:"#F5F7FA"
+          50:"#F5F7FA",
+          200: '#D9DBE1',
+          900: '#263238'
         }
       },
       fontSize: {
         '6xl': ['4rem', '1.2'], // 64px
       },
-      container: {
-        center: true,
-      },
+      container: false,
       borderRadius: {
-      'sm': '0.25rem',
-    }
+        'sm': '0.25rem',
+      },
+      maxWidth:{
+        'screen-sm': '540px',
+        'screen-md': '720px',
+        'screen-lg': '992px',
+        'screen-xl': '1152px',
+        'screen-2xl': '1568px',
+      },
+      fontFamily: {
+        'sans': ['"Inter"'],
+      },
     },
   },
   plugins: [],
